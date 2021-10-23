@@ -16,5 +16,5 @@ async fn delay(seconds: u64) -> String {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![index, world, delay])
+    rocket::build().mount("/", routes![index, delay])
 }
